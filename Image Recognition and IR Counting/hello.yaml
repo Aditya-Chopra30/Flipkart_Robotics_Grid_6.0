@@ -1,0 +1,13 @@
+train: sabki_mehnat/train/images
+val: sabki_mehnat/valid/images
+test: sabki_mehnat/test/images
+
+nc: 13
+names: ['MRP_expiry', 'barcode', 'cheese_balls_crax', 'crax', 'curlz', 'expiry', 'frills', 'la', 'label_box', 'mfg_date', 'natkhat', 'price', 'tedhe_medhe']
+
+roboflow:
+  workspace: grid-mzuwc
+  project: mrp-label
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/grid-mzuwc/mrp-label/dataset/1
