@@ -62,7 +62,50 @@ You have successfully set up and executed the fruit freshness detection system. 
 
 ---
 
-idhar kro
+## 2. 🏷 Product Detection and IR Counting
+
+To get started with product detection and IR counting, follow these steps:
+
+### Step 1: Download the Dataset
+First, download the dataset from the link below:
+- [Product Detection Dataset](https://drive.google.com/file/d/12r8oJrfIxTyvC-fBMLoB9EbhCXBQUeV9/view?usp=sharing)
+
+After downloading, extract the folder.
+
+### Step 2: Prepare Dataset for Training
+1. Open the extracted folder using Visual Studio Code.
+2. Edit the yaml file to set the correct paths according to your directory structure:
+   yaml
+   train: your_path/train/images 
+   val: your_path/valid/images
+   test: your_path/test/images
+   
+
+### Step 3: Train the Model
+Create a Python file and use the code from the link below to start training:
+- [Training Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/yola.py)
+
+After training completes, you can check the runs/detect/predict folder to verify the accuracy. You should see that the trained model is saved as best.pt. Copy this file and paste it into your current project folder.
+
+### Step 4: Test the Trained Model on Live Camera
+Use the following code to test the trained model on a live camera:
+- [Live Camera Testing Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/camera.py)
+
+Once executed, you will see results like the one shown below.
+
+### Step 5: IR Counting Integration
+1. Open the Arduino IDE.
+2. Follow the circuit diagram below for connections.
+3. Upload the code to your microcontroller:
+   - [IR Counting Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/sketch_mar11a.ino)
+
+You can build your own conveyor belt to automate the process.
+
+### Step 6: Combining Product Detection and IR Counting
+To integrate both product detection and IR counting, use the following code via VS Code:
+- [Combined Product Detection and IR Counting Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/ir.py)
+
+🎉 Congratulations! You have successfully set up product detection and IR counting for your warehouse automation.
 
 **Stay Tuned!**  
 More guides on Product Detection, OCR Extraction of Brand/Product Names, and Expiry Date Labeling are coming soon.
