@@ -78,11 +78,11 @@ After downloading, extract the folder.
 ### Step 2: Prepare Dataset for Training
 1. Open the extracted folder using Visual Studio Code.
 2. Edit the yaml file to set the correct paths according to your directory structure:
-   yaml
+   ```yaml
    train: your_path/train/images 
    val: your_path/valid/images
    test: your_path/test/images
-   
+   ```
 
 ### Step 3: Train the Model
 Create a Python file and use the code from the link below to start training:
@@ -95,6 +95,7 @@ Use the following code to test the trained model on a live camera:
 - [Live Camera Testing Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/camera.py)
 
 Once executed, you will see results like the one shown below.
+![testit](https://github.com/user-attachments/assets/53475767-f404-4496-bc64-ebb212944a90)
 
 ### Step 5: IR Counting Integration
 1. Open the Arduino IDE.
@@ -105,14 +106,13 @@ Once executed, you will see results like the one shown below.
    - [IR Counting Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/sketch_mar11a.ino)
 
 You can build your own conveyor belt to automate the process.
+![WhatsApp Image 2024-10-20 at 22 47 59_03f90420](https://github.com/user-attachments/assets/6144ab48-d132-449a-bab1-3e76a5a4c42c)
 
 ### Step 6: Combining Product Detection and IR Counting
 To integrate both product detection and IR counting, use the following code via VS Code:
 - [Combined Product Detection and IR Counting Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/ir.py)
 
 🎉 Congratulations! You have successfully set up product detection and IR counting for your warehouse automation.
-
-
 
 ## 3. 🏷 OCR Extraction of Expiry Date, MFG, and Price
 
@@ -127,11 +127,11 @@ After downloading, extract the folder.
 ### Step 2: Prepare Dataset for Training
 1. Open the extracted folder using Visual Studio Code.
 2. Edit the yaml file to set the correct paths according to your directory structure:
-   yaml
+   ```yaml
    train: your_path/train/images 
    val: your_path/valid/images
    test: your_path/test/images
-   
+   ```
 
 ### Step 3: Train the Model
 Create a Python file and use the code from the link below to start training:
@@ -145,7 +145,9 @@ Use the following code to test the trained model on a live camera:
 
 ### Step 5: Crop and Extract Text from Images
 1. Create a folder named test_these and place some images for extracting expiry dates and MRP. You can use the example image below.
-2. Run the following code, making sure to edit paths according to your directory:
+2. ![testit](https://github.com/user-attachments/assets/9c3067fa-bcbe-4195-a111-d9967be405d9)
+
+3. Run the following code, making sure to edit paths according to your directory:
    - [Image Cropping Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Ocr%20to%20extract%20expiry%20and%20MRP%20from%20Products/crop.py)
 
 This code will crop the MRP, price, and labels from the images and automatically place them into the cropped_images folder.
