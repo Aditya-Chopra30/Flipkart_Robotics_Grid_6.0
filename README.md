@@ -107,7 +107,6 @@ To integrate both product detection and IR counting, use the following code via 
 
 🎉 Congratulations! You have successfully set up product detection and IR counting for your warehouse automation.
 
-Here's the updated README section for **OCR Extraction of Expiry Date, MFG, and Price** in your Autonomous Warehouse Project:
 
 
 idhar kro
