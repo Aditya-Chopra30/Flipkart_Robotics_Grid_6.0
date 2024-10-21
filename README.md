@@ -109,7 +109,46 @@ To integrate both product detection and IR counting, use the following code via 
 
 
 
-idhar kro
+## 3. 🏷 OCR Extraction of Expiry Date, MFG, and Price
+
+To set up OCR extraction for product details like expiry date, manufacturing information, and price, follow the steps below:
+
+### Step 1: Download the Dataset
+First, download the dataset from the link below:
+- [OCR Extraction Dataset](https://drive.google.com/file/d/12r8oJrfIxTyvC-fBMLoB9EbhCXBQUeV9/view?usp=sharing)
+
+After downloading, extract the folder.
+
+### Step 2: Prepare Dataset for Training
+1. Open the extracted folder using Visual Studio Code.
+2. Edit the yaml file to set the correct paths according to your directory structure:
+   yaml
+   train: your_path/train/images 
+   val: your_path/valid/images
+   test: your_path/test/images
+   
+
+### Step 3: Train the Model
+Create a Python file and use the code from the link below to start training:
+- [Training Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/yola.py)
+
+After the training completes, you can check the runs/detect/predict folder to verify the accuracy. You should see that the trained model is saved as best.pt. Copy this file and paste it into your current project folder.
+
+### Step 4: Test the Trained Model on Live Camera
+Use the following code to test the trained model on a live camera:
+- [Live Camera Testing Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/camera.py)
+
+### Step 5: Crop and Extract Text from Images
+1. Create a folder named test_these and place some images for extracting expiry dates and MRP. You can use the example image below.
+2. Run the following code, making sure to edit paths according to your directory:
+   - [Image Cropping Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Ocr%20to%20extract%20expiry%20and%20MRP%20from%20Products/crop.py)
+
+This code will crop the MRP, price, and labels from the images and automatically place them into the cropped_images folder.
+
+3. Run the code below to extract text from the cropped images:
+   - [Text Extraction Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Ocr%20to%20extract%20expiry%20and%20MRP%20from%20Products/crop3.py)
+
+🎉 Congratulations! You have successfully set up OCR extraction for expiry dates, MFG details, and prices from product labels.
 
 This guide follows a structured approach, ensuring clarity and easy follow-along steps. It includes the essential code links and instructions to help set up OCR extraction efficiently.
 **Stay Tuned!**  
