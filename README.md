@@ -150,7 +150,6 @@ This code will crop the MRP, price, and labels from the images and automatically
 
 🎉 Congratulations! You have successfully set up OCR extraction for expiry dates, MFG details, and prices from product labels.
 
-This guide follows a structured approach, ensuring clarity and easy follow-along steps. It includes the essential code links and instructions to help set up OCR extraction efficiently.
 **Stay Tuned!**  
 More guides on Product Detection, OCR Extraction of Brand/Product Names, and Expiry Date Labeling are coming soon.
 
