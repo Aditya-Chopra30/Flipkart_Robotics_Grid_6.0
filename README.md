@@ -10,6 +10,8 @@ This project aims to create a comprehensive autonomous system for warehouse mana
 3. **OCR Extraction of Brand Name and Product Name**
 4. **OCR Extraction of Expiry Date, Label, Mfg, and Price**
 
+https://github.com/user-attachments/assets/9009d5a8-de1f-4559-8f56-5ca7e989932e
+
 ---
 
 ## 1. Fruit Freshness Detection 🍎🍌
@@ -96,7 +98,9 @@ Once executed, you will see results like the one shown below.
 ### Step 5: IR Counting Integration
 1. Open the Arduino IDE.
 2. Follow the circuit diagram below for connections.
-3. Upload the code to your microcontroller:
+3. ![Doc2_page-0001](https://github.com/user-attachments/assets/dbbff2eb-d87a-4495-b1ac-7820c118d3f5)
+
+4. Upload the code to your microcontroller:
    - [IR Counting Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/sketch_mar11a.ino)
 
 You can build your own conveyor belt to automate the process.
