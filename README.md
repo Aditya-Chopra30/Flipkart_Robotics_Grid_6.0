@@ -154,10 +154,34 @@ This code will crop the MRP, price, and labels from the images and automatically
 
 🎉 Congratulations! You have successfully set up OCR extraction for expiry dates, MFG details, and prices from product labels.
 
-**Stay Tuned!**  
-More guides on Product Detection, OCR Extraction of Brand/Product Names, and Expiry Date Labeling are coming soon.
+## 4 🏷️ OCR Extraction of Brand Name and Product Name
 
-Feel free to explore the code, suggest improvements, and reach out if you need any assistance.
+Follow the steps below to set up OCR extraction for brand names and product names.
+
+### Step 1: Train the YOLO Model
+Repeat the steps outlined earlier for training the YOLO model:
+1. Download the dataset and prepare it by editing the `yaml` file with the correct paths.
+2. Use the [Training Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Image%20Recognition%20and%20IR%20Counting/yola.py) to train the model.
+3. After training, save the `best.pt` model file and place it in your project folder.
+
+### Step 2: Download Required CSV File
+Download the required CSV file from the link below:
+- [Brand & Product Name CSV](https://drive.google.com/file/d/1Yumni6y682Na5O5_2-0eD9cxFSCn6lFh/view?usp=sharing)
+
+Place this CSV file in the same project folder as your trained model.
+
+### Step 3: Run the Code to Extract Brand and Product Name
+1. Make sure your project folder contains:
+   - The trained model file (`best.pt`)
+   - The downloaded CSV file
+2. Run the following code to perform OCR extraction:
+   - [OCR Extraction Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/OCR%20To%20extract%20details%20from%20Products/newcrop.py)
+
+### Optional: Run the Code with a User Interface
+If you prefer using a user-friendly interface, you can run the following code:
+- [UI-Based OCR Extraction Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/OCR%20To%20extract%20details%20from%20Products/ui.py)
+
+🎉 Congratulations! You have successfully set up OCR extraction for brand and product names.
 
 ---
 
