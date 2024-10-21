@@ -41,7 +41,9 @@ After the model training, proceed to set up the microcontroller for real-time fr
 
 1. Open the Arduino IDE.
 2. Follow the connection diagram below to connect the ESP32 and DHT22 sensors.
-3. Compile and upload the following code to your ESP32 microcontroller:
+3. ![Doc1_page-0001](https://github.com/user-attachments/assets/4b4af15f-4539-4e98-9243-8132bae3b156)
+
+4. Compile and upload the following code to your ESP32 microcontroller:
    [ESP32 Arduino Code](https://github.com/TechArcanist/Flipkart_Robotics_Grid_6.0/blob/main/Fruit%20Freshness/sketch_oct20a.ino)
 
 ### Step 4: Running the Freshness Check
