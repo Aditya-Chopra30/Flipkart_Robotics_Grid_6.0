@@ -63,7 +63,7 @@ else:
                 os.makedirs(cropped_dir) 
             target_labels = ['frills', 'natkhat', 'tedhe_medhe','curlz','cheese_balls_crax','crax']
             for idx, (box, cls) in enumerate(zip(results[0].boxes.xyxy, results[0].boxes.cls)):
-                label = results[0].names[int(cls)]  # Get the label name from targetted labels
+                label = results[0].names[int(cls)]  
                 if label in target_labels:
                     x1, y1, x2, y2 = map(int, box)
                     cropped_image = image[y1:y2, x1:x2]
@@ -77,6 +77,6 @@ else:
             print("Exiting...")
             break
 
-# Release the camera and close all windows
+
 camera.release()
 cv2.destroyAllWindows()
