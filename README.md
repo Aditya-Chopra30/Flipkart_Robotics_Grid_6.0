@@ -62,6 +62,8 @@ You have successfully set up and executed the fruit freshness detection system. 
 
 ---
 
+idhar kro
+
 **Stay Tuned!**  
 More guides on Product Detection, OCR Extraction of Brand/Product Names, and Expiry Date Labeling are coming soon.
 
