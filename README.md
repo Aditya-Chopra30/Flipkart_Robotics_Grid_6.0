@@ -7,8 +7,8 @@ This project aims to create a comprehensive autonomous system for warehouse mana
 
 1. **Fruit Freshness Detection**
 2. **Product Detection**
-3. **OCR Extraction of Brand Name and Product Name**
-4. **OCR Extraction of Expiry Date, Label, Mfg, and Price**
+3. **OCR Extraction of Expiry Date, Label, Mfg, and Price**
+4. **OCR Extraction of Brand Name and Product Name**
 
 https://github.com/user-attachments/assets/9009d5a8-de1f-4559-8f56-5ca7e989932e
 
