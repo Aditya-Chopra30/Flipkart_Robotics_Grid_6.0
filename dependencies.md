@@ -15,6 +15,4 @@ pip install opencv-python ultralytics torch easyocr
 # GUI libraries
 pip install pillow tk
 
-# Note: Tkinter is usually included with Python, so you might not need to install it separately.
-
 ```
